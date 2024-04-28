@@ -5,7 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>home page</title>
 	<style type="text/css">
+		@media only screen and (max-width: 500px) {
+			.navbar,
+			.section2,
+			.grid1 {
+				width:  90%;
+				height: 100%;
+			}
+			
+		}
+
 		body {
+			display: flex;
+			flex-direction: column;
 			font-family: sans-serif, verdana;
 			margin: 0px;
 			background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("images/fertlizer broadcaster.jpg");
@@ -14,41 +26,56 @@
 			background-position: center;
 			padding-top: 60px;
 		}
-		.grid1 {
+		.navbar {
 			box-shadow: inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.15);
 			border-width: 2px;
 			border-color: rgb(245, 245, 245, 1.0);
 			background-color: rgb(83,104,120);
-			display: grid;
-			grid-template-columns: 100px 200px  1fr;
+			display: flex;
+			flex-direction: row;
 			position: fixed;
 			top: 0px;
 			right: 0px;
 			left: 0px;
 			height: 70px;
 		}
+		.left-section {
+			width: 300px;
+			display: flex;
+			flex-direction: row;
+		}
+		.logo-container {
+			width:100px ;
+		}
 		.logo {
 			margin-right: 5px;
-			width: 100px;
+			width: 90%;
+		}
+		.whatsapp-container {
+			flex: 1;
 		}
 		.Whatsapp-button {
 			margin-top: 17px;
 			width: 180px;
 			margin-right: 50px;
-		}	
-		.buttons {
+		}
+
+		.right-section {
 			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
 			flex-direction: row;
 			align-items: center;
-			justify-content: space-around;
+			justify-content: flex-end;
 			margin-right: 20px;
+			column-gap: 20px;
 		}
 		
 		
 		.irrigation-button {
 			background-color: rgb(0, 0, 0, 0.0);
-			height: 35px;
-			width: 205px;
+			height: 30px;
+			width: 100px;
 			font-size: 20px;
 			border-style: solid;
 			border-width: 1px;
@@ -70,8 +97,8 @@
 			background-color: rgb(14, 124, 227);
 		}
 		.structures-button {
-			height: 35px;
-			width: 200px;
+			height: 30px;
+			width: 100px;
 			font-size: 20px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
@@ -93,8 +120,8 @@
 			background-color: rgb(14, 124, 227);
 		}
 		.machinery-button {
-			height: 35px;
-			width: 230px;
+			height: 30px;
+			width: 100px;
 			font-size: 20px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
@@ -116,8 +143,8 @@
 			background-color: rgb(14, 124, 227);
 		}
 		.processing-button {
-			height: 35px;
-			width: 200px;
+			height: 30px;
+			width: 100px;
 			font-size: 20px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
@@ -137,6 +164,9 @@
 		.processing-button:active {
 			color: white;
 			background-color: rgb(14, 124, 227);
+		}
+		.section2 {
+			flex: 1;
 		}
 		
 		.heading {
@@ -172,12 +202,9 @@
 			animation: slideLeft 1s ease-in 2s;
 			color: white;
 			font-size: 20px;
+			text-align: center;
 		}
 		.contacts {
-			position: fixed;
-			right: 5px;
-			top:80px;
-			width: 230px;
 			height: 100px;
 			color: white;
 			box-shadow:  5px 5px 5px rgba(255, 255, 255, 0.15);
@@ -192,6 +219,57 @@
 	</style>
 </head>
 <body>
+	
+	<div class="navbar">
+		<section class="left-section">
+			<div class="logo-container">
+				<img class="logo" src="images/logo.png">
+			</div>
+			<div class="Whatsapp-container">
+				<a  aria-label = "Chat on Whatsapp" href="https://wa.me/254723891898">
+				<img class="Whatsapp-button" src="images/Whatsapp.png" alt="Chat on Whatsapp">
+			</div>
+			
+		</a>
+		</section>
+		
+		<section class="right-section">
+			<div class="irrigation-button">
+				<a href="irrigation.html"><button > Water and Irrigation</button></a>
+			</div>
+			
+			<div class="structures-button">
+				<a href="farm-structures.html">
+				<button >Farm Structures</button>
+			</a>
+			</div>
+			
+			<div class="machinery-button">
+				<a href="power-machinery.html">
+				<button >Power and Machinery</button>
+			</a>
+			</div>
+			
+
+			<div class="processing-button">
+				<button > Food Processing</button>
+
+			</div>
+						
+		</section>
+	</div>
+	<div class="section2">
+		<h1 class="heading">JD AGRI-WATER CONSULTANCY SERVICES</h1>
+		<h2 class="sub-heading">Led by a team of dedicated agricultural and biosystems engineers</h2>
+		<h3 class="intro"><i>we offer consultancy services in the following areas:</i> </h3>
+			<p class="services">
+				1. Design of Agricultural structures <br>
+				2. Training on farm marchinery operation and maintenancebr	<br>
+				3. Consultancy on drying and cooling of agricultural materials <br>
+				4. Design of water and irrigation systems <br>
+			</p>
+	</div>
+
 	<div class="contacts">
 		<h3 style="margin:0px"> Email: 
 			<a  href="mailto:justinkim741@gmail.com">
@@ -206,33 +284,7 @@
 		</h3>
 		
 	</div>
-	<div class="grid1">
-		<img class="logo" src="images/logo.png">
-		<a  aria-label = "Chat on Whatsapp" href="https://wa.me/254723891898">
-			<img class="Whatsapp-button" src="images/Whatsapp.png" alt="Chat on Whatsapp">
-		</a>
-		<div class="buttons">
-			<a href="irrigation.html"><button class="irrigation-button"> Water and Irrigation</button></a>
-			<a href="farm-structures.html">
-				<button class="structures-button">Farm Structures</button>
-			</a>
-			<a href="power-machinery.html">
-				<button class="machinery-button">Power and Machinery</button>
-			</a>
-
-			<button class="processing-button"> Food Processing</button>
-			
-		</div>
-	</div>
-	<h1 class="heading">JD AGRI-WATER CONSULTANCY SERVICES</h1>
-	<h2 class="sub-heading">Led by a team of dedicated agricultural and biosystems engineers</h2>
-	<h3 class="intro"><i>we offer consultancy services in the following areas:</i> </h3>
-			<pre class="services">
-				1. Design of Agricultural structures
-				2. Training on farm marchinery operation and maintenance
-				3. Consultancy on drying and cooling of agricultural materials
-				4. Design of water and irrigation systems
-			</pre>
+	
 	
 </body>
 </html>
