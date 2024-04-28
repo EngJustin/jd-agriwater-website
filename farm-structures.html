@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>farm structures page</title>
+	<style type="text/css">
+		body{
+			padding-top: 70px;
+			font-family: sans-serif, verdana;
+			background:linear-gradient(to right, lightgreen, lightblue);
+			background-size: cover;
+			background-position: center;
+			padding-top: 60px;
+			color: black;
+		}
+
+
+
+		.flex-div {
+			display: flex;
+			flex-direction: row;
+			height: 60px;
+			align-items: center;
+			justify-content: start;
+			background-color: white;
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			box-shadow: inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.15);
+			border-width: 2px;
+			border-color: rgb(245, 245, 245, 1.0);
+
+		}
+		.logo{
+			width: 100px;
+			margin-left: 10px;
+		}
+		.Whatsapp-button {
+			width: 200px;
+		}
+		.home-button {
+			margin-left: 10px;
+			margin-right: 10px;
+			height: 35px;
+			width: 100px;
+			font-size: 20px;
+			background-color: white;
+			border-style: solid;
+			border-width: 2px;
+			border-color: rgb(3,211,252);
+			border-radius: 5px;
+			color: rgb(3,211,252);
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.home-button:hover {
+			background-color: rgb(3,211,252);
+			color: white;
+			cursor: pointer;
+			transition: background-color 0.15s;
+		}
+		.home-button:active {
+			color: white;
+			background-color: rgb(14, 124, 227);
+		}
+		.title {
+			flex: 1;
+			margin-left: 100px;
+			color: rgb(3,211,252);
+		}
+		.contacts {
+			position: fixed;
+			right: 5px;
+			top:80px;
+			width: 230px;
+			height: 120px;
+			color: white;
+			box-shadow:  5px 5px 5px rgba(255, 255, 255, 0.15);
+			background: linear-gradient(to left, lightgreen, lightblue);
+			border-width: 2px;
+			border-style: groove;
+			border-radius: 10px;
+			padding: 10px;
+			
+		}
+
+		.row1 {
+			display: grid;
+			grid-template-columns: 400px 1fr;
+		}
+
+		}
+		
+		.deliverables {
+			font-size: 17px;
+		}
+		.row2 {
+			display: grid;
+			grid-template-columns: 1fr 500px;
+		}
+		.pig-house {
+			width: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="contacts">
+		<h4>Email: <a href="mailto:justinkim741@gmail.com">justin741@gmail.com</a></h4>
+		<h4>Call: <a href="tel:0723891898">0723891898</a></h4>
+	</div>
+	<div class="main-div">
+		<div class="flex-div">
+			<img class="logo" src="images/logo.png"></img>
+			<a  aria-label = "Chat on Whatsapp" href="https://wa.me/254723891898">
+				<img class="Whatsapp-button" src="images/Whatsapp.png" alt="Chat on Whatsapp">
+			</a>
+			<a href="index.html"><button class="home-button">home</button></a>
+		
+			<h1 class="title">Welcome to Farm Structures</h1>
+			
+		</div>
+	</div>
+	<div class="row1">
+
+		<div class="column2">
+			<h2 class="example-structures">Structures that we design</h2>
+				<p class="examples">
+					1. Livestock houses (dairy farms, pig farms, chicken farms etc.) <br>
+					2. solar dryers <br>
+					3. coolers <br>
+					4. storage structures <br>
+				</p>
+		</div>
+		<div class="column2">
+			<h2 class="reasons-heading">Why engange us</h2>
+			<p class="reasons">
+				1. animal welfare. consideration on space, <br>
+				   &nbsp &nbsp ventilation, temperature control, humidity and hygiene  <br>
+				2. to develop capacity <br>
+				3. to develope environmentally sustainable houses<br>
+				4. efficiency and productivity <br>
+				5. to ensure there is cost effectiveness
+			</p>
+		</div>
+		
+	</div>
+		
+
+	<div class="row2">
+		<div class="row2-column1">
+			<h1 class="deliverables-heading">Deliverables</h1>
+			<pre class="deliverables">
+	1. DESIGN DRAWINGS
+		these include detailed architectural , structural and electrical drawings that outline the
+		specifications of the farm structure. these drawings serve as the blueprint for construction
+		and include dimensions, materials and other technical details.
+
+	2. ENGINEERING CALCULATIONS:
+		these calculations ensure that the structure meets safety and performance stardards.
+		this may include load bearing-calulations, structural analysis and environmental impact.
+
+	3.TECHNICAL SPECIFICATIONS:
+		these provide technical specifications for materials, equipment and construction methods
+		to be used in the project. this ensures that all componets meet quality stardards and are
+		compatible with e design.
+
+	4.COST ESTIMATES;
+		cost estimates for labour, materials, equipment and other expenses. this helps in budgeting
+		and scuring funds for the project.
+
+	5. PERMITTING AND REGULATORY COMPLIANCE:
+		we will assist in obtaining necessary permits and ensuring compliance with building codes,
+		zoning regulations, environment regulations and othe legal requirements.
+	
+	6. CONSTRUCTION OVERSIGHT:
+		we provide oversight services to ensure that the project is built according to the
+		design specifications and quality stardards. this will include site visits, inspections
+		and coordination with the contractor or fundi.
+
+
+
+			</pre>
+	</div>
+
+		<img class="pig-house" src="images/pig layout.jpg">
+	</div>
+	
+</body>
+</html>

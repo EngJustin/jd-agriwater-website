@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="justin kimathi">
+	<title>irrigation page</title>
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			font-family: sans-serif, verdana, arial;
+			height: 100vh;
+			width: 100%;
+			background:linear-gradient(to right, lightgreen, lightblue);
+			background-size: cover;
+			background-position: center;
+		}
+		.row1{
+			display: flex;
+			flex-direction: row;
+			height: 60px;
+			align-items: center;
+			justify-content: start;
+			background-color: white;
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			left: 0px;
+			box-shadow: inset 2.5px 2.5px 5px rgba(0, 0, 0, 0.15);
+			border-width: 2px;
+			border-color: rgb(245, 245, 245, 1.0);
+		}
+		
+		.logo {
+			width: 100px;
+		}
+		.home-button {
+			margin-left: 10px;
+			margin-right: 10px;
+			height: 35px;
+			width: 100px;
+			font-size: 20px;
+			background-color: white;
+			border-style: solid;
+			border-width: 2px;
+			border-color: rgb(3,211,252);
+			border-radius: 5px;
+			color: rgb(3,211,252);
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.home-button:hover {
+			background-color: rgb(3,211,252);
+			color: white;
+			cursor: pointer;
+			transition: background-color 0.15s;
+		}
+		.home-button:active {
+			color: white;
+			background-color: rgb(14, 124, 227);
+		}
+		.Whatsapp-button{
+			width: 200px;
+			margin-right: 0px;	
+		}
+		.Whatsapp-button:active {
+			opacity : 0.7;
+			transition: opacity 0.15s;
+		}
+		.header {
+			margin-left: 20px;
+			color: rgb(3,211,252);
+		}
+
+		.row2{
+			display: block;
+		}
+		.sub-heading {
+			width: 600px;
+			color: black;
+			margin-left: 0px;
+		}
+
+		.row3{
+			vertical-align: bottom;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.deliverables-container {
+			padding-left: 10px;
+			color: rgb(0,109,91);
+			width: 500px;
+			box-shadow: 2.5px 2.5px 5px rgba(255,255,255,0.75);
+			
+			margin-left: 0px;
+		}
+		.deliverables {
+			color: black;
+			padding-left: 10px;
+			margin-left: 10px;
+			font-size: 14px;
+			padding-left: 0px;
+		}
+		.deliverables:hover {
+			font-size: 15px;
+			cursor: pointer;
+			transition: font-size 0.25s ease-in-out;
+		}
+		.video-container {
+			flex: 1;
+			margin-left: 230px;
+			height: 400px;
+		}
+		.video {
+			box-shadow: 2.5px 2.5px 5px rgba(255,255,255,0.75);
+			height: 100%;
+			margin-bottom: 0px;
+			margin-right: 0;
+		}
+		.video:hover{
+
+		}
+		.contacts {
+			position: fixed;
+			right: 5px;
+			top:80px;
+			width: 230px;
+			height: 120px;
+			color: white;
+			box-shadow:  5px 5px 5px rgba(255, 255, 255, 0.15);
+			background: linear-gradient(to left, lightgreen, lightblue);
+			border-width: 2px;
+			border-style: groove;
+			border-radius: 10px;
+			padding: 10px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="contacts">
+		<h4>Email: <a href="mailto:justinkim741@gmail.com">justin741@gmail.com</a></h4>
+		<h4>Call: <a href="tel:0723891898">0723891898</a></h4>
+	</div>
+	<div class="row1">
+		<img class="logo" src="images/logo.png">
+		<a  aria-label = "Chat on Whatsapp" href="https://wa.me/254723891898">
+				<img class="Whatsapp-button" src="images/Whatsapp.png" alt="Chat on Whatsapp">
+		</a>
+		<a href="index.html"><button class="home-button">home</button></a>
+		<h1 class="header">Welcome to Irrigation and Water Engineering</h1>
+	</div>
+	<div class="row2">
+		<h2 class="sub-heading">Deliverables  in the design
+		of irrigation systems and or water systems.</h2>
+		
+	</div>
+	<div class="row3">
+		<div class="deliverables-container">
+			<p class="deliverables">
+				<strong>1. DESIGN PLANS:</strong><br>
+					&nbsp&nbsp&nbsp&nbspdetailed plans outlining the layout of the irrigation system,<br>
+					&nbsp&nbsp&nbsp&nbspincluding pipe routes, valve locations and sprinkler or <br>
+					&nbsp&nbsp&nbsp&nbspdrip emitter placement.<br>
+					<br>	
+				<strong>2. HYDRAULIC CALCULATIONS:</strong> <br>
+					&nbsp&nbsp&nbsp&nbspcalculations determining water flow rates, pressure requirements,<br>
+					&nbsp&nbsp&nbsp&nbspand pipe sizing to ensure proper distribution of water throughout <br>
+					&nbsp&nbsp&nbsp&nbspthe system. <br>
+				<strong>3. EQUIPMENT SPECIFICATIONS:</strong><br>
+					&nbsp&nbsp&nbsp&nbsprecommendations for irrigation equipment such as pumps, pipes <br>
+					&nbsp&nbsp&nbsp&nbspvalves and controllers, tailored to the specific needs of the <br>
+					&nbsp&nbspsites and crops. <br>
+				<strong>4. COST ESTIMATES:</strong><br>
+					&nbsp&nbsp&nbsp&nbspEstimates of the cost associated with purchasing and installing <br>
+					&nbsp&nbsp&nbsp&nbspthe irrigation systems, including materials, labor and any <br> 
+					&nbsp&nbsp&nbsp&nbspnecessary permits. <br>
+				<strong>5. OPERATIONAL AND MAINTENANCE GUIDELINES:</strong><br>
+					&nbsp&nbsp&nbsp&nbspinstructions for operating  and maintaining the irrigation <br>
+					&nbsp&nbsp&nbsp&nbspsystems to ensure optimal performance and longevity <br>
+
+				<strong>6. WATER MANAGEMENT PLAN:</strong> <br>
+					&nbsp&nbsp&nbsp&nbspStrategies for efficient water use, including scheduling irrigation <br>
+					&nbsp&nbsp&nbsp&nbspevents, monitoring soil moisture levels, and implimenting water saving <br>
+					&nbsp&nbsp&nbsp&nbsptechnologies. <br>
+			</p>
+		</div>
+		<div class="video-container">
+			<video class="video" controls src="videos/irrigation.mp4">
+		</div>
+	</div>
+
+</body>
+</html>
