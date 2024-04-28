@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="agriculture, irrigation, sprinkler irrigation, drip irrigation,
+		dairy farm, cow housing, pig farm, tractor operation and maintenance, agricultural engineering,
+		agricultural engineer ">
 	<title>home page</title>
 	<style type="text/css">
 		@media only screen and (max-width: 500px) {
@@ -54,6 +57,7 @@
 			height: 70px;
 		}
 		.left-section {
+			border: solid black;
 			width: 300px;
 			display: flex;
 			flex-direction: row;
@@ -65,14 +69,23 @@
 			margin-right: 5px;
 			width: 100%;
 		}
-		.whatsapp-container {
-			flex: 1;
+		.button-container {
+			width: 70px;
 		}
 		.Whatsapp-button {
+			display: flex;
+			align-items: center;
+			margin-top: 10px;
+			margin-left: 10px;
+			height: 70px;
+			width: 70px;
+			border: none;
+			border-radius: 4px;
 			margin-top: 17px;
-			height: 30px;
-			width: 150px;
 			margin-right: 50px;
+		}
+		.Whatsapp-button:hover {
+			cursor: pointer;
 		}
 
 		.right-section {
@@ -243,9 +256,13 @@
 			<div class="logo-container">
 				<img class="logo" src="images/logo.png">
 			</div>
-			<div class="Whatsapp-container">
-				<a  aria-label = "Chat on Whatsapp" href="https://wa.me/254723891898">
-				<img class="Whatsapp-button" src="images/Whatsapp.png" alt="Chat on Whatsapp">
+			<div class="button-container" >
+					<a href="https://wa.me/254723891898">
+						<button >
+							whatsapp
+						</button>
+					</a>
+				
 			</div>
 			
 		</a>
