@@ -56,14 +56,15 @@
 		}
 		.logo {
 			margin-right: 5px;
-			width: 90%;
+			width: 100%;
 		}
 		.whatsapp-container {
 			flex: 1;
 		}
 		.Whatsapp-button {
 			margin-top: 17px;
-			width: 180px;
+			height: 30px;
+			width: 150px;
 			margin-right: 50px;
 		}
 
@@ -77,13 +78,15 @@
 			margin-right: 20px;
 			column-gap: 20px;
 		}
-		
+		.irrigation-button-container {
+
+		}
 		
 		.irrigation-button {
 			background-color: rgb(0, 0, 0, 0.0);
 			height: 30px;
-			width: 100px;
-			font-size: 20px;
+			width: 150px;
+			font-size: 15px;
 			border-style: solid;
 			border-width: 1px;
 			border-color: rgb(3,211,252);
@@ -94,7 +97,7 @@
 		}
 		.irrigation-button:hover {
 			background-color: rgb(3,211,252);
-			font-size: 20.5px;
+			font-size: 14.8px;
 			color: white;
 			cursor: pointer;
 			transition: background-color 0.25s ease-in, color 0.25s ease-in, font-size 0.25s ease-in ;
@@ -105,8 +108,8 @@
 		}
 		.structures-button {
 			height: 30px;
-			width: 100px;
-			font-size: 20px;
+			width: 130px;
+			font-size: 15px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
 			border-width: 1px;
@@ -118,9 +121,10 @@
 		}
 		.structures-button:hover {
 			background-color: rgb(3,211,252);
+			font-size: 14.8px;
 			color: white;
 			cursor: pointer;
-			transition: background-color 0.25s ease-in, color 0.25s ease-in;
+			transition: background-color 0.25s ease-in, color 0.25s ease-in,font-size 0.25s ease-in;
 		}
 		.structures-button:active {
 			color: white;
@@ -128,8 +132,8 @@
 		}
 		.machinery-button {
 			height: 30px;
-			width: 100px;
-			font-size: 20px;
+			width: 160px;
+			font-size: 15px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
 			border-width: 1px;
@@ -141,9 +145,10 @@
 		}
 		.machinery-button:hover {
 			background-color: rgb(3,211,252);
+			font-size: 14.8px;
 			color: white;
 			cursor: pointer;
-			transition: background-color 0.25s ease-in, color 0.25s ease-in;
+			transition: background-color 0.25s ease-in, color 0.25s ease-in,font-size 0.25s ease-in;
 		}
 		.machinery-button:active {
 			color: white;
@@ -151,8 +156,8 @@
 		}
 		.processing-button {
 			height: 30px;
-			width: 100px;
-			font-size: 20px;
+			width: 130px;
+			font-size: 15px;
 			background-color: rgb(0, 0, 0, 0.0);
 			border-style: solid;
 			border-width: 1px;
@@ -164,9 +169,10 @@
 		}
 		.processing-button:hover {
 			background-color: rgb(3,211,252);
+			font-size: 14.8px;
 			color: white;
 			cursor: pointer;
-			transition: background-color 0.25s ease-in, color 0.25s ease-in;
+			transition: background-color 0.25s ease-in, color 0.25s ease-in,font-size 0.25s ease-in;
 		}
 		.processing-button:active {
 			color: white;
@@ -239,25 +245,25 @@
 		</section>
 		
 		<section class="right-section">
-			<div class="irrigation-button">
-				<a href="irrigation.html"><button > Water and Irrigation</button></a>
+			<div class="irrigation-button-container">
+				<a href="irrigation.html"><button class="irrigation-button"> Water and Irrigation</button></a>
 			</div>
 			
-			<div class="structures-button">
+			<div>
 				<a href="farm-structures.html">
-				<button >Farm Structures</button>
+				<button class="structures-button">Farm Structures</button>
 			</a>
 			</div>
 			
-			<div class="machinery-button">
+			<div >
 				<a href="power-machinery.html">
-				<button >Power and Machinery</button>
+				<button class="machinery-button">Power and Machinery</button>
 			</a>
 			</div>
 			
 
-			<div class="processing-button">
-				<button > Food Processing</button>
+			<div >
+				<button class="processing-button"> Food Processing</button>
 
 			</div>
 						
